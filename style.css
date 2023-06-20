@@ -7,6 +7,7 @@
 
 .section-1-container{
     display: flex;
+    background-color: whitesmoke;
 }
 .sec1-left-heading{
     font-size: 38px;
@@ -45,11 +46,12 @@
     margin: 0px;
 }
 .sec1-txt{
-    width: 100%;
+    /* width: 100%; */
     overflow: hidden;
    -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   display: -webkit-box;
+  padding: 0px 20px;
 }
 
 .sec1-card-img{
@@ -140,40 +142,6 @@
 
 
 
-/* .sec-3-main{
-    display: flex;
-    justify-content: space-between;
-}
-
-.sec-3-txt,.social-media,.sec-4-text{
-    text-align: center;
-}
-.social-media{
-    display: none;
-
-}
-
-.sec-3-card:hover{
-    .social-media{
-        display: block;
-        font-size: 30px;
-    }
-    .sec-3-card{
-        margin: 0px;
-    }
-}
-
-@media only screen and (max-width: 768px){
-    .sec-3-main{
-        flex-wrap: wrap;
-    }
-    .sec-3-img{
-        height: 250px;
-        width: 250px;
-    }
-} */
-
-
 
 
 
@@ -185,6 +153,7 @@
 
 .sec-4-container{
     background-color: gray;
+    margin-top: 50px;
 }
 
 .card{
@@ -205,6 +174,9 @@
     }
 }
 
+
+/* section-3 */
+
 .sec-3-main{
     display: flex;
     justify-content: space-around;
@@ -214,16 +186,23 @@
 .sec-3-img{
     height: 200px;
     width: 200px;
+    border-radius: 15px;
 }
 .sec-3-txt,.social-media{
     text-align: center;
 }
 .social-media{
     display: none;
+ 
+}
 
+.sec-3-card{
+    transition: 0.8s;
+    margin-bottom: 50px;
 }
 
 .sec-3-card:hover{
+    transform: scale(1.1);
     .social-media{
         display: block;
         font-size: 30px;
